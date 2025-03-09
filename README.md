@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ceezer Carbon Footprint Calculator POC
 
-## Getting Started
+This proof-of-concept application was developed with significant assistance from AI (Claude), particularly in areas of:
+- Component styling using shadcn/ui
+- React hooks architecture and state management
+- TypeScript type definitions and validation
+- Code organization and architectural patterns
 
-First, run the development server:
+## 🤖 AI Contribution
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The AI (Claude) was particularly helpful in:
+- Setting up the clean architecture pattern with services, hooks, and components
+- Implementing proper TypeScript types and validation
+- Creating reusable UI components with shadcn/ui
+- Handling edge cases and error states
+- Unit conversion and emissions calculations
+
+While the core business logic and requirements were human-defined, the AI helped streamline the development process and ensure best practices were followed.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+1. Install [Bun](https://bun.sh/) (our package manager):
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+2. Verify Bun installation:
+   ```bash
+   bun --version
+   ```
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd ceezer-fe-poc
+   ```
+
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+
+3. Start the development server:
+   ```bash
+   bun run dev
+   ```
+
+4. Open [http://localhost:3000/emissions](http://localhost:3000/emissions) in your browser
+
+## 🏗️ Project Structure
+
+```
+src/
+  ├── app/
+  │   └── modules/
+  │       └── emissions/
+  │           ├── api/
+  │           │   └── emissionsCalculator.ts
+  │           ├── services/
+  │           │   └── emissionsService.ts
+  │           ├── hooks/
+  │           │   └── useEmissions.ts
+  │           ├── components/
+  │           │   └── EmissionsForm.tsx
+  │           └── types.ts
+  └── components/
+      └── ui/
+          └── [shadcn-ui components]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧮 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Calculate carbon footprint from multiple emission sources:
+  - Transportation (plane, gasoline car, electric car)
+  - Home Energy (electricity, natural gas, heating oil, solar)
+  - Food Consumption (various food types)
+- Real-time calculations and updates
+- Category-specific unit handling (km, kWh, m³, L, kg)
+- Detailed emission breakdowns by category
+- Input validation and error handling
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technical Stack
 
-## Learn More
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Bun package manager
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Development Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- The application uses a clean architecture pattern with separate concerns for:
+  - Data types and constants (`types.ts`)
+  - Business logic (`emissionsCalculator.ts`)
+  - Service layer (`emissionsService.ts`)
+  - State management (`useEmissions.ts`)
+  - UI components (`EmissionsForm.tsx`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- All emission factors are stored in constants and can be easily updated
+- Unit conversions are handled automatically based on the emission type
+- The UI is responsive and follows modern design practices
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to submit issues and enhancement requests. Please note that this is a proof-of-concept application.
