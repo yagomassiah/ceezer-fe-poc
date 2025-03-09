@@ -1,4 +1,4 @@
-export type TransportationType = 'plane' | 'gasoline_car' | 'electric_car' | 'train';
+export type TransportationType = 'plane' | 'gasoline_car' | 'electric_car' | 'train' | 'biking' | 'walking';
 export type HomeEnergyType = 'electricity' | 'natural_gas' | 'heating_oil' | 'solar_energy';
 export type FoodType = 'chicken' | 'rice' | 'fruits' | 'beef' | 'pork' | 'vegetables';
 
@@ -33,6 +33,8 @@ export const EMISSION_FACTORS = {
     gasoline_car: 0.21, // per km
     electric_car: 0.075, // per km
     train: 0.04, // per km
+    biking: 0.0, // per km
+    walking: 0.0, // per km
   },
   home_energy: {
     electricity: 0.4, // per kWh (using average of 0.3-0.5)
@@ -44,8 +46,8 @@ export const EMISSION_FACTORS = {
     chicken: 6.9, // per kg
     rice: 2.7, // per kg
     fruits: 0.9, // per kg
-    beef: 60, // per kg
+    beef: 27, // per kg
     pork: 7.2, // per kg
-    vegetables: 0.4, // per kg
+    vegetables: 1, // per kg
   },
 } as const; 
