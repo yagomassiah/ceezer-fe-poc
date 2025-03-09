@@ -5,15 +5,6 @@ Hello again Ceezer Team, as I'm getting the rust off of my FE skill this POC app
 - React hooks architecture and state management
 - TypeScript type definitions and validation
 
-## 🤖 AI Contribution
-
-The AI (Claude) was particularly helpful in:
-- Setting up a simple pattern with services, hooks, and components
-- Implementing proper TypeScript types and validation
-- Creating reusable UI components with shadcn/ui
-- Handling edge cases and error states
-- Unit conversion and emissions calculations
-
 
 ## 🚀 Getting Started
 
