@@ -83,7 +83,7 @@ src/
 
 ## 🛠️ Technical Stack
 
-- Next.js 14
+- Next.js 15.1.6
 - TypeScript
 - Tailwind CSS
 - shadcn/ui
