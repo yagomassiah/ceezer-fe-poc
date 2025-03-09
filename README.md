@@ -1,21 +1,19 @@
 # Ceezer Carbon Footprint Calculator POC
 
-This proof-of-concept application was developed with significant assistance from AI (Claude), particularly in areas of:
+Hello again Ceezer Team, as I'm getting the rust off of my FE skill this POC application was developed with significant assistance from AI (Claude), particularly in areas of:
 - Component styling using shadcn/ui
 - React hooks architecture and state management
 - TypeScript type definitions and validation
-- Code organization and architectural patterns
 
 ## 🤖 AI Contribution
 
 The AI (Claude) was particularly helpful in:
-- Setting up the clean architecture pattern with services, hooks, and components
+- Setting up a simple pattern with services, hooks, and components
 - Implementing proper TypeScript types and validation
 - Creating reusable UI components with shadcn/ui
 - Handling edge cases and error states
 - Unit conversion and emissions calculations
 
-While the core business logic and requirements were human-defined, the AI helped streamline the development process and ensure best practices were followed.
 
 ## 🚀 Getting Started
 
