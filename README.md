@@ -5,6 +5,9 @@ Hello again Ceezer Team, as I'm getting the rust off of my FE skill this POC app
 - React hooks architecture and state management
 - TypeScript type definitions and validation
 
+## Preview
+![Preview of the Carbon Footprint Calculator](preview.png)
+
 
 ## 🚀 Getting Started
 
